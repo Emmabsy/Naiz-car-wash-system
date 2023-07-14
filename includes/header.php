@@ -228,10 +228,10 @@
                 <img src="/img/avatar.png" alt="Avatar">
             </div>
             <ul>
-                <li><a href="admin">Dashboard</a></li>
-                <!--
-                <li><a href="logout.php">Logout</a></li>
-    -->
+                <li><a href="admin">Admin</a></li>
+                
+                <li><a href="login.php">Login</a></li>
+    
             </ul>
         </li>
     </ul>

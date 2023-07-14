@@ -2,7 +2,7 @@
     <div class="container mx-auto py-4 px-10 full-height">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
             <div class="col-span-1">
-                <h3 class="text-l font-bold">Company</h3>
+                <h3 class="text-l font-bold">Naiz</h3>
                 <ul class="mt-2">
                     <li><a href="about.php" class="text-gray-400 hover:text-gray-200">About Us</a></li>
                     <li><a href="contact.php" class="text-gray-400 hover:text-gray-200">Contact Us</a></li>
@@ -10,15 +10,16 @@
                 </ul>
             </div>
             <div class="col-span-1">
-                <h3 class="text-l font-bold">Services</h3>
+                <h3 class="text-l font-bold">Pages</h3>
                 <ul class="mt-2">
-                    <li><a href="#" class="text-gray-400 hover:text-gray-200">Car Wash</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-gray-200">Detailing</a></li>
-                    <li><a href="#" class="text-gray-400 hover:text-gray-200">Maintenance</a></li>
+                    <li><a href="index.php" class="text-gray-400 hover:text-gray-200">Home</a></li>
+                    <li><a href="services.php" class="text-gray-400 hover:text-gray-200">Services</a></li>
+                    <li><a href="location.php" class="text-gray-400 hover:text-gray-200">Centers</a></li>
+                    
                 </ul>
             </div>
             <div class="col-span-1">
-                <h3 class="text-l font-bold">Social Media</h3>
+                <h3 class="text-l font-bold">Socials</h3>
 
                 <ul class="mt-2">
                     <li><a href="https://www.whatsapp.com/" class="text-gray-400 hover:text-gray-200">Whatsapp</a></li>

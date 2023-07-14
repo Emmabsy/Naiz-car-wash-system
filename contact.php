@@ -67,8 +67,8 @@ if (isset($_POST['submit'])) {
     <div class="contact">
         <div class="container">
             <div class="section-header text-center">
-                <p>Get In Touch</p>
-                <h2>Contact for any query</h2>
+                <p class="">Get In Touch</p>
+                <h2>Connect with Us - Contact Details and Inquiry Form</h2>
             </div>
             <!--
             <div class="flex flex-wrap justify-center">
@@ -106,7 +106,6 @@ if (isset($_POST['submit'])) {
                 -->
             <div>
                 <div class="contact-form">
-                    <div id="success"></div>
                     <form name="sentMessage" id="contactForm" method="post">
                         <div class="control-group">
                             <input type="text" class="form-control w-full mb-4 px-4 py-2 rounded-md border-gray-300 focus:outline-none focus:border-indigo-500" id="name" placeholder="Your Name" required="required" name="name" />

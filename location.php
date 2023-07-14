@@ -48,7 +48,7 @@ include('includes/config.php');
     <div class="location">
         <div class="container mx-auto px-4 py-10">
             <div class="section-header text-center">
-                <h2 class="text-3xl font-bold mb-5">Car Washpoints &amp; Care Centers</h2>
+                <h2 class="text-3xl font-bold mb-5">Naiz Car Washpoints &amp; Care Centers</h2>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4">
                 <?php
@@ -96,7 +96,7 @@ include('includes/config.php');
                             <h3 class="text-4xl font-bold text-gray-800 mb-2">50</h3>
                             <p class="text-lg text-gray-600">Car Wash Workers</p>
                         </div>
-                        <a href="#" class="text-blue-500 mt-4 underline">Learn More</a>
+                        <a href="#" class="text-blue-500 mt-4 underline">More</a>
                     </div>
                 </div>
                 <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 px-4 mb-8">
@@ -106,7 +106,7 @@ include('includes/config.php');
                             <h3 class="text-4xl font-bold text-gray-800 mb-2">500</h3>
                             <p class="text-lg text-gray-600">Happy Clients</p>
                         </div>
-                        <a href="#" class="text-blue-500 mt-4 underline">Learn More</a>
+                        <a href="#" class="text-blue-500 mt-4 underline">More</a>
                     </div>
                 </div>
                 <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 px-4 mb-8">
@@ -116,7 +116,7 @@ include('includes/config.php');
                             <h3 class="text-4xl font-bold text-gray-800 mb-2">5000</h3>
                             <p class="text-lg text-gray-600">Projects Completed</p>
                         </div>
-                        <a href="#" class="text-blue-500 mt-4 underline">Learn More</a>
+                        <a href="#" class="text-blue-500 mt-4 underline">More</a>
                     </div>
                 </div>
             </div>

@@ -78,7 +78,7 @@ if (isset($_POST['book'])) {
                             <h3 class="text-4xl font-bold text-gray-800 mb-2">50</h3>
                             <p class="text-lg text-gray-600">Car Wash Workers</p>
                         </div>
-                        <a href="#" class="text-blue-500 mt-4 underline">Learn More</a>
+                        <a href="#" class="text-blue-500 mt-4 underline">More</a>
                     </div>
                 </div>
                 <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 px-4 mb-8">
@@ -88,7 +88,7 @@ if (isset($_POST['book'])) {
                             <h3 class="text-4xl font-bold text-gray-800 mb-2">500</h3>
                             <p class="text-lg text-gray-600">Happy Clients</p>
                         </div>
-                        <a href="#" class="text-blue-500 mt-4 underline">Learn More</a>
+                        <a href="#" class="text-blue-500 mt-4 underline">More</a>
                     </div>
                 </div>
                 <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/4 px-4 mb-8">
@@ -98,7 +98,7 @@ if (isset($_POST['book'])) {
                             <h3 class="text-4xl font-bold text-gray-800 mb-2">5000</h3>
                             <p class="text-lg text-gray-600">Projects Completed</p>
                         </div>
-                        <a href="#" class="text-blue-500 mt-4 underline">Learn More</a>
+                        <a href="#" class="text-blue-500 mt-4 underline">More</a>
                     </div>
                 </div>
             </div>

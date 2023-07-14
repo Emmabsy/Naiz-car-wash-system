@@ -33,8 +33,9 @@ if (strlen($_SESSION['alogin']) == 0) {
                 window.scrollTo(0, 1);
             }
         </script>
-        <link href="css/style.css" rel='stylesheet' type='text/css' />
+
         <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <link href="css/style.css" rel='stylesheet' type='text/css' />
         <script src="js/jquery-2.1.4.min.js"></script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
         <link href="css/font-awesome.css" rel="stylesheet">
@@ -111,8 +112,10 @@ if (strlen($_SESSION['alogin']) == 0) {
                                         <td class="p-2 border-b border-solid border-2 border-gray-600"><?php echo htmlentities($result->washDate . "/" . $result->washTime); ?></td>
                                         <td class="p-2 border-b border-solid border-2 border-gray-600"><?php echo htmlentities($result->postingDate); ?></td>
                                         <td>
-                                            <a class="font-bold" href="booking-details.php?wpid=<?php echo htmlentities($result->bid); ?>">Edit</a> |
-                                            <a class="font-bold" href="all-bookings.php?rid=<?php echo htmlentities($result->bid); ?>" style="color:red;" onClick="return confirm('Do you really want to delete');">Delete</a>
+                                            <a class="font-bold" href="booking-details.php?bid=<?php echo htmlentities($result->bid); ?>&&bookingid=<?php echo htmlentities($result->bookingId); ?>" style="color:blue;">View</a> |
+
+                                            <a class="font-bold" href="booking-details.php?wpid=<?php echo htmlentities($result->bid); ?>" style="color:green">Edit</a> |
+                                            <a class=" font-bold" href="all-bookings.php?rid=<?php echo htmlentities($result->bid); ?>" style="color:red;" onClick="return confirm('Do you really want to delete');">Delete</a>
                                         </td>
 
                                     </tr>

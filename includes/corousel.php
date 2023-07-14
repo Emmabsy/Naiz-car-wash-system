@@ -10,7 +10,7 @@
                 Our mission is to provide convenient and high-quality car wash services through our online platform. We aim to revolutionize the industry by leveraging technology for seamless booking and exceptional cleaning results. Through our blog and magazine, we educate car owners about maintenance and the latest car wash advancements.
             </p>
             <div class="post__author-info">
-                <h6>|| Mission</h6>
+                <h6 class="font-bold"></h6>
             </div>
         </div>
         <div class="post__thumbnail">
