@@ -55,10 +55,10 @@ if (isset($_POST['change_password'])) {
     <!-- Include Tailwind CSS CDN link here -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="css/style.css" rel='stylesheet' type='text/css' />
-    <
-    <script src="js/jquery-2.1.4.min.js"></script>
+    < <script src="js/jquery-2.1.4.min.js">
+        </script>
 
-    <link href="css/font-awesome.css" rel="stylesheet">
+        <link href="css/font-awesome.css" rel="stylesheet">
 </head>
 
 <body>
@@ -89,7 +89,7 @@ if (isset($_POST['change_password'])) {
 
             <div class="overflow-x-auto">
 
-              
+
                 <!--<div class="lg:w-full max-w-md mx-auto"> -->
                 <div class="container mx-auto px-2 py-8">
                     <h2 class="text-2xl mb-6 text-center font-bold text-red-600">Change Password</h2>

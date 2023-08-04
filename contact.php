@@ -32,17 +32,10 @@ if (isset($_POST['submit'])) {
     <title>Naiz | Contact Us</title>
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <!-- CSS Libraries -->
-
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body class="overflow-x-hidden">
     <?php include_once('includes/header.php'); ?>
     <div class="page-header">
@@ -58,10 +51,6 @@ if (isset($_POST['submit'])) {
             </div>
         </div>
     </div>
-
-
-
-
 
     <!-- Contact Start -->
     <div class="contact">

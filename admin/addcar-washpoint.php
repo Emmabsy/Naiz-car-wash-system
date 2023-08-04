@@ -60,10 +60,7 @@ if (strlen($_SESSION['alogin']) == 0) {
 
             <div class="w-4/5 bg-white py-4 px-5">
                 <div class="bg-gray-100 py-4 mb-5">
-
                 </div>
-
-
                 <!-- Breadcrumb -->
                 <div class="px-4 py-8">
                     <ol class="breadcrumb flex items-center text-gray-500">
@@ -119,9 +116,6 @@ if (strlen($_SESSION['alogin']) == 0) {
             </div>
         </div>
 
-        <script src=" js/jquery.nicescroll.js"></script>
-                                            <script src="js/scripts.js"></script>
-                                            <script src="js/bootstrap.min.js"></script>
 
     </body>
 

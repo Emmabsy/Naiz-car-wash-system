@@ -4,6 +4,7 @@ include('includes/config.php');
 
 if (isset($_POST['alogin'])) {
     $username = $_POST['username'];
+    //$password = md5($_POST['password']);
     $password = $_POST['password'];
 
     $sql = "SELECT * FROM admin_login WHERE username = :username AND password = :password";

@@ -95,11 +95,7 @@ INSERT INTO `tblenquiry` (`id`, `FullName`, `EmailId`, `Subject`, `Description`,
 (4, 'Anuj kumar', 'anuj@gmail.com', 'General Enquiry', 'I want to know the price of car wash', '2021-12-13 18:27:53', 1),
 (5, 'Amit', 'amit@gmail.com', 'Test', 'Test', '2021-12-14 19:14:22', 1);
 
--- --------------------------------------------------------
 
---
--- Table structure for table `tblpages`
---
 
 CREATE TABLE `tblpages` (
   `id` int(11) NOT NULL,

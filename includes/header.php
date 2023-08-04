@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Add Tailwind CSS CDN link here -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <!-- Add Font Awesome CDN link here -->
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <title>Responsive Menu Bar</title>
     <style>
@@ -148,17 +148,19 @@
                 <li class="nav-item">
                     <a href="location.php" class="nav-link">Wash Centers</a>
                 </li>
+                <!--
                 <li class="nav-item">
-                    <a href="../login.php" class="nav-link">Book</a>
+                    <a href="/user/login.php" class="nav-link">Book</a>
                 </li>
+    -->
                 <li class="nav-item">
                     <a href="contact.php" class="nav-link">Contact</a>
                 </li>
-                <!--
+             
                 <li class="nav-item">
-                    <a href="admin" class="nav-link">Dashboard</a>
+                    <a href="user" class="nav-link">Dashboard</a>
                 </li>
-    -->
+    
                 <li class="nav-item">
                     <!--Change-->
                     <div class="relative">
@@ -173,27 +175,18 @@
                                 <li>
                                     <a href="admin" class="admint block px-4 py-2 text-sm text-white hover:bg-gray-700 dark:text-green-900 dark:hover:bg-gray-400 dark:hover:text-white">Admin</a>
                                 </li>
-
+                                <!--
                                 <li>
-                                    <a href="../login.php" class=" adminttwo block px-2 py-2 text-sm hover:bg-gray-500 ddark:hover:bg-gray-600 dark:hover:text-white text-center">Login</a>
+                                    <a href="user" class="admint block px-4 py-2 text-sm text-white hover:bg-gray-700 dark:text-green-900 dark:hover:bg-gray-400 dark:hover:text-white">User</a>
                                 </li>
+    -->
+
 
                             </ul>
                         </div>
 
                     </div>
-                    <!--Change-->
-
-                    <!--<li class="nav__profile relative">
-                    <div class="avatar">
-                        <img src="/img/avatar.png" alt="Avatar">
-                    </div>
-                    <ul>
-                        <li><a href="admin">Dashboard</a></li>
-                        <li><a href=" logout.html">Logout</a></li>
-                    </ul>
-                </li>
-    -->
+         
             </ul>
 
             <button id="open__nav-btn" class="lg:hidden md:hidden md:pl-2 text-3xl mr-0 font-bold text-yellow-400">
@@ -216,9 +209,7 @@
         <li class="nav-item">
             <a href="location.php" class="nav-link  block py-2 pl-3 pr-4 text-white bg-gray-900 rounded md:bg-transparent md:text-green-900 md:p-0 md:dark:text-green-500">Wash Centers</a>
         </li>
-        <li class="nav-item">
-            <a href="login.php" class="nav-link block py-2 pl-3 pr-4 text-white bg-gray-900 rounded md:bg-transparent md:text-green-900 md:p-0 md:dark:text-green-500">Book</a>
-        </li>
+       
         <li class="nav-item">
             <a href="contact.php" class="nav-link block py-2 pl-3 pr-4 text-white bg-gray-900 rounded md:bg-transparent md:text-green-900 md:p-0 md:dark:text-green-500">Contact</a>
         </li>
@@ -229,9 +220,10 @@
             </div>
             <ul>
                 <li><a href="admin">Admin</a></li>
-                
+                <li><a href="user">User Profile</a></li>
+
                 <li><a href="login.php">Login</a></li>
-    
+
             </ul>
         </li>
     </ul>

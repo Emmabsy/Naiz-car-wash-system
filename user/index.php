@@ -17,7 +17,7 @@ if (isset($_POST['login'])) {
     if ($count > 0) {
         // User exists, redirect to the desired page
         $_SESSION['login'] = $_POST['email'];
-        header("Location: washing-plans.php");
+        header("Location: user-dashboard.php");
         exit;
     } else {
         // Invalid credentials
@@ -35,10 +35,11 @@ if (isset($_POST['login'])) {
     <link href="/css/style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
 <?php include('includes/header.php'); ?>
 
 <body class="bg-gray-100">
-    <div class="flex items-center mt-8 pt-5 justify-center ">
+    <div class="flex items-center mt-20 pt-5 justify-center ">
         <div class="w-full max-w-lg bg-white rounded-lg p-8 bg-gray-200">
             <h2 class="text-2xl mb-6 text-center">Sign In</h2>
             <form method="post" class="space-y-4">

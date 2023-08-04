@@ -4,31 +4,16 @@ include('includes/config.php');
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title> Naiz Car Wash management System | About Us Page</title>
-
-
-    <!-- Google Font -->
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <!-- CSS Libraries -->
-
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-
 </head>
-
 <body class="overflow-x-hidden">
     <?php include_once('includes/header.php'); ?>
-
     <div class="page-header">
         <div class="container">
             <div class="row">
@@ -42,14 +27,7 @@ include('includes/config.php');
             </div>
         </div>
     </div>
-
-
-
     <!-- About Start -->
-
-
-
-
     <div class="about">
         <div class="container px-10 flex items-center">
             <div class="flex flex-wrap space-x-3  items-center">
@@ -88,29 +66,9 @@ include('includes/config.php');
         </div>
     </div>
 
-    <!-- About End -->
     <?php include_once('includes/footer.php'); ?>
-
-
-
-
-
-
-    <?php include_once('includes/header.php'); ?>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
 </body>
 
 </html>

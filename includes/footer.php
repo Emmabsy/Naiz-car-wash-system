@@ -30,8 +30,6 @@
             <div class="col-span-1">
                 <h3 class="text-l font-bold">Newsletter</h3>
                 <button type="submit" class="py-2 px-2  bg-cyan-950  text-m text-gray-400  rounded-lg  hover:bg-gray-600 focus:outline-none focus:bg-gray-600"> Subscribe </button>
-
-
                 </form>
             </div>
         </div>

@@ -49,13 +49,12 @@ if (isset($_POST['book'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
 <style>
-    /* Rest of the CSS remains the same */
+  
 </style>
 
-
 <body>
-
     <?php include_once('includes/header.php'); ?>
     <div class="page-header">
         <div class="container">
@@ -70,8 +69,6 @@ if (isset($_POST['book'])) {
             </div>
         </div>
     </div>
-
-
     <div class="container bg-white">
         <h2 class="plan-heading text-3xl font-bold mb-5 text-center">Choose Your Plan</h2>
         <div class="flex flex-wrap justify-center">
@@ -211,15 +208,6 @@ if (isset($_POST['book'])) {
             </div>
         </div>
     </div>
-    <!---->
-
-
-
-
-
-
-    <!---->
-
     <script>
         function showModal() {
             document.getElementById("myModal").style.display = "flex";
@@ -230,7 +218,6 @@ if (isset($_POST['book'])) {
         }
     </script>
     <?php include_once('includes/footer.php'); ?>
-
 
 </body>
 

@@ -1,34 +1,19 @@
 <?php error_reporting(0);
 include('includes/config.php');
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <title>Naiz Car Wash management System | Car Wash Points</title>
-
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.9/css/boxicons.min.css">
-
-
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
-
-
-
-
 </head>
-
 <body class="overflow-x-hidden">
-
-    <!-- Top Bar Start -->
     <?php include_once('includes/header.php'); ?>
-
-
-
     <div class="page-header">
         <div class="container">
             <div class="row">
@@ -42,7 +27,6 @@ include('includes/config.php');
             </div>
         </div>
     </div>
-
 
 
     <div class="location">
@@ -60,7 +44,7 @@ include('includes/config.php');
                 ?>
                     <div class="col-span-1">
                         <div class="location-item flex items-center">
-                            <i class="fas fa-map-marker-alt text-blue-500 text-3xl mr-3"></i>
+                            <i class="fas fa-map-marker-alt text-blue-500 text-3xl mr-2"></i>
                             <div class="location-text">
                                 <h3 class="text-xl font-bold"><?php echo htmlentities($result->washingPointName); ?></h3>
                                 <p class="text-gray-600"><?php echo htmlentities($result->washingPointAddress); ?></p>

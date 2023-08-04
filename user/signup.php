@@ -20,20 +20,30 @@ if (isset($_POST['signup'])) {
         echo "<script>alert('Email already registered. Please login.');</script>";
     } else {
         // Create a new user
-        $sql = "INSERT INTO users (name, email, password) VALUES (:name, :email, :password)";
+        $sql = "INSERT INTO users (firstname, lastname, email, password, updationDate) VALUES (:firstname, :lastname, :email, :password, NOW())";
         $query = $dbh->prepare($sql);
         $query->bindParam(':firstname', $firstname, PDO::PARAM_STR);
         $query->bindParam(':lastname', $lastname, PDO::PARAM_STR);
         $query->bindParam(':email', $email, PDO::PARAM_STR);
         $query->bindParam(':password', $password, PDO::PARAM_STR);
-        $query->execute();
 
-        // After successful signup, redirect to login page
-        header("Location: login.php");
-        exit;
+        if ($query->execute()) {
+            // After successful signup, redirect to login page
+            header("Location: login.php");
+            exit;
+        } else {
+            // Error in database insertion
+            echo "<script>alert('Error in database insertion. Please try again.');</script>";
+        }
     }
 }
 ?>
+
+<!DOCTYPE HTML>
+<html>
+
+<!-- Rest of the code remains the same -->
+
 
 <!DOCTYPE HTML>
 <html>
@@ -42,6 +52,7 @@ if (isset($_POST['signup'])) {
     <title>Sign Up</title>
     <!-- Include Tailwind CSS CDN link here -->
     <link href="/css/style.css" rel="stylesheet">
+    <!-- Include Tailwind CSS CDN link here -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
         body {
@@ -52,10 +63,10 @@ if (isset($_POST['signup'])) {
 
 <body>
     <?php include('includes/header.php'); ?>
-    <div class="flex items-center mt-2 justify-center ">
+    <div class="flex items-center mt-20 justify-center ">
         <div class="w-full max-w-lg  rounded-lg p-4 bg-gray-200">
             <h2 class="text-2xl mb-6 text-center">Sign Up</h2>
-            <form method="post" class=" space-y-3 ">
+            <form method="post" class="space-y-3">
                 <div>
                     <label for="firstname" class="block text-gray-900">First Name</label>
                     <input type="text" name="firstname" id="first_name" required class="w-full p-1 border border-gray-300 rounded">
