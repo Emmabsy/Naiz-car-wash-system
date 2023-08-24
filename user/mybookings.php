@@ -8,18 +8,29 @@ if (!isset($_SESSION['login'])) {
     exit;
 }
 
+
 // Include the config file
 include('includes/config.php');
 
 // Fetch the logged-in user's email from the session
-$email = $_SESSION['login'];
+$userEmail = $_SESSION['login'];
 
-
+// Code for Deletion
+if (isset($_GET['rid'])) {
+    $id = $_GET['rid'];
+    $sql = "DELETE FROM tblcarwashbooking WHERE id=:id AND userEmail = :userEmail";
+    $query = $dbh->prepare($sql);
+    $query->bindParam(':id', $id, PDO::PARAM_STR);
+    $query->bindParam(':userEmail', $userEmail, PDO::PARAM_STR);
+    $query->execute();
+    echo "<script>alert('Record Deleted');</script>";
+    echo "<script>window.location.href ='allbookings.php'</script>";
+}
 
 // Fetch bookings for the logged-in user only
-$sql = "SELECT * FROM tblcarwashbooking WHERE email = :email";
+$sql = "SELECT * FROM tblcarwashbooking WHERE userEmail = :userEmail";
 $query = $dbh->prepare($sql);
-$query->bindParam(':email', $email, PDO::PARAM_STR);
+$query->bindParam(':userEmail', $userEmail, PDO::PARAM_STR);
 $query->execute();
 $results = $query->fetchAll(PDO::FETCH_OBJ);
 ?>
@@ -131,8 +142,8 @@ $results = $query->fetchAll(PDO::FETCH_OBJ);
                                     <td class="p-2 border-b border-solid border-2 border-gray-600"><?php echo htmlentities($result->washTime); ?></td>
                                     <td class="p-2 border-b border-solid border-2 border-gray-600"><?php echo htmlentities($result->message); ?></td>
                                     <td>
-                                        <a class="font-bold text-green-900" href="edit-booking.php?bookingId=<?php echo htmlentities($result->bookingId); ?>">Edit</a> 
-                                        
+                                        <a class="font-bold text-green-900" href="edit-booking.php?bookingId=<?php echo htmlentities($result->bookingId); ?>">Edit</a>
+
 
                                 </tr>
                         <?php

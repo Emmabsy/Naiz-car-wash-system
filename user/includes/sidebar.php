@@ -10,7 +10,7 @@
             </li>
             <li>
                 <a href="addbooking.php" class="flex items-center p-2 text-gray-100 rounded-lg dark:text-white hover:bg-green-500 dark:hover:bg-green-700 group">
-                    <span class="flex-1 ml-3 whitespace-nowrap">Book Washing </span>
+                    <span class="flex-1 ml-3 whitespace-nowrap">Book washing </span>
                 </a>
             </li>
 
@@ -24,11 +24,13 @@
 
                 </div>
             </li>
+            <!--
             <li>
                 <a href="m-enquiries.php" class="flex items-center p-2 text-gray-100 rounded-lg dark:text-white hover:bg-green-500 dark:hover:bg-green-700 group">
                     <span class="flex-1 ml-3 whitespace-nowrap">Enquiries</span>
                 </a>
             </li>
+-->
 
 
             <li>
@@ -36,9 +38,6 @@
                     <span class="flex-1 ml-3 whitespace-nowrap">Profile</span>
                 </a>
             </li>
-
-
-
 
         </ul>
     </div>

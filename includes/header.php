@@ -150,15 +150,16 @@
                 </li>
                 <!--
                 <li class="nav-item">
-                    <a href="/user/login.php" class="nav-link">Book</a>
+                    <a href="login.php" class="nav-link">Book</a>
                 </li>
     -->
+   
                 <li class="nav-item">
                     <a href="contact.php" class="nav-link">Contact</a>
                 </li>
              
                 <li class="nav-item">
-                    <a href="user" class="nav-link">Dashboard</a>
+                    <a href="user" class="nav-link">User</a>
                 </li>
     
                 <li class="nav-item">

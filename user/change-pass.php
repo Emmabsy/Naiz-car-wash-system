@@ -41,8 +41,24 @@ if (isset($_POST['change_password'])) {
 
 <head>
     <title>Change Password</title>
-    <!-- Add your head contents here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -61,48 +77,46 @@ if (isset($_POST['change_password'])) {
             <div class="px-4 py-8">
                 <ol class="breadcrumb flex items-center text-gray-500">
                     <li class="mr-2">
-                        <a href="user-dashboard.php" class="text-green-700 hover:text-blue-600 font-bold "> <i class="fas fa-home mr-1"></i>Home </a>
+                        <a href="dashboard.php" class="text-green-700 hover:text-blue-600 font-bold "> <i class="fas fa-home mr-1"></i>Home </a>
                     </li>
                     <li>
                         <i class="fas fa-angle-right text-gray-600 mx-1"></i>
-                        <span class="text-gray-900 font-bold ">Change Pasword</span>
+                        <span class="text-gray-900 font-bold ">Change Password</span>
                     </li>
                 </ol>
             </div>
 
-            <!-- Content -->
-            <div class="container mx-auto">
-                <div class="max-w-md mx-auto">
-                    <div class="bg-white rounded-lg overflow-hidden shadow-md">
-                        <div class="px-8 py-4">
-                            <h2 class="text-3xl text-bold mt-6 text-center">Change Password</h2>
-                            <div class="flex items-center mt-1 pt-5 justify-center ">
-                                <div class="w-full max-w-lg bg-white rounded-lg p-8 bg-gray-200">
-                                    <form method="post" class="mt-4">
-                                        <h2 class="text-2xl mb-6 text-center">Change Password</h2>
-                                        <form method="post" class="space-y-3">
-                                            <div>
-                                                <label for="current_password" class="block text-gray-900">Current Password</label>
-                                                <input type="password" name="current_password" id="current_password" required class="w-full p-2 border border-gray-300 rounded">
-                                            </div>
-                                            <div>
-                                                <label for="new_password" class="block text-gray-900">New Password</label>
-                                                <input type="password" name="new_password" id="new_password" required class="w-full p-2 border border-gray-300 rounded">
-                                            </div>
-                                            <div>
-                                                <label for="confirm_password" class="block text-gray-900">Confirm Password</label>
-                                                <input type="password" name="confirm_password" id="confirm_password" required class="w-full p-2 mb-3 border border-gray-300 rounded">
-                                            </div>
-                                            <div>
-                                                <input type="submit" name="change_password" value="Change Password" class="w-full bg-green-900 text-white py-2 px-4 rounded hover:bg-green-600 cursor-pointer">
-                                            </div>
-                                        </form>
-                                </div>
+            <div class="overflow-x-auto">
+
+
+                <!--<div class="lg:w-full max-w-md mx-auto"> -->
+                <div class="container mx-auto px-2 py-8">
+                    <h2 class="text-2xl mb-6 text-center text-red-600 font-bold">Change Password</h2>
+                    <form method="post" class="mt-4">
+
+                        <form method="post" class="space-y-3">
+                            <div class="mb-4">
+                                <label for="current_password" class="block text-gray-900">Current Password</label>
+                                <input type="password" name="current_password" id="current_password" required class="w-full p-2 border border-gray-300 rounded">
                             </div>
-                        </div>
-                    </div>
+                            <div class="mb-4">
+                                <label for="new_password" class="block text-gray-900">New Password</label>
+                                <input type="password" name="new_password" id="new_password" required class="w-full p-2 border border-gray-300 rounded">
+                            </div>
+                            <div class="mb-4">
+                                <label for="confirm_password" class="block text-gray-900">Confirm Password</label>
+                                <input type="password" name="confirm_password" id="confirm_password" required class="w-full p-2 mb-3 border border-gray-300 rounded">
+                            </div>
+                            <div>
+                                <input type="submit" name="change_password" value="Change Password" class="w-full bg-green-900 text-white py-2 px-4 rounded hover:bg-green-600 cursor-pointer">
+                            </div>
+                        </form>
                 </div>
             </div>
+        </div>
+    </div>
+    </div>
+    </div>
 </body>
 
 </html>
