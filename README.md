@@ -1,5 +1,9 @@
 # Car Wash Management System
 
+<img src="./img/Read1.png" alt="">
+<img src="./img/Read2.png" alt="">
+<img src="./img/Read3.png" alt="">
+
 The Car Wash Management System is a web application designed to streamline the process of booking car wash services and managing appointments. It provides an easy way for customers to book appointments at various car wash points and allows administrators to manage these bookings efficiently.
 
 ## Table of Contents
